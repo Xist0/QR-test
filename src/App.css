@@ -1,0 +1,83 @@
+.app-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.input-container {
+  margin-bottom: 15px;
+}
+
+.submit-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.order-details {
+  margin-top: 20px;
+  display: flex;
+}
+
+.order-data {
+  flex: 1;
+}
+
+.qr-code-section {
+  margin-left: 20px;
+}
+
+.qr-code {
+  border: 1px solid #ddd;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+.download-button {
+  margin-top: 10px;
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.qr-code {
+  border: 1px solid #ddd;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+@media print {
+  .qr-code {
+    position: absolute;
+    top: 10px;
+    left: 15%;
+    transform: translateX(-50%);
+    border: 5px solid black;
+    padding: 20px;
+  }
+
+  .order-details {
+    flex-direction: column;
+  }
+
+  .order-data {
+    margin-bottom: 20px;
+  }
+
+  .download-button {
+    display: none;
+  }
+}
